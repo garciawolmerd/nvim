@@ -45,6 +45,6 @@ autocmd FileType javascript setlocal makeprg=eslint\ --format\ compact
 autocmd BufWritePost *.js silent make! <afile> | silent redraw!
 autocmd QuickFixCmdPost [^l]* cwindow
 
-packadd! matchit
+runtime macros/matchit.vim
 
 colorscheme koehler
