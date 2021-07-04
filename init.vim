@@ -20,7 +20,7 @@ set display=truncate
 set nrformats-=octal
 map Q gq
 inoremap <C-U> <C-G>u<C-U>
-set nolangremap
+set nolangnoremap
 set complete=.,w,b,u,t,i
 set omnifunc=syntaxcomplete#Complete
 set number
