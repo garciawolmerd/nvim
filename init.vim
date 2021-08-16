@@ -30,9 +30,6 @@ set termguicolors
 let $RTP=split(&runtimepath, ',')[0]
 let $RC='$HOME/.vim/vimrc'
 
-" remap ctrl+j to insert new line
-nnoremap <NL> i<CR><ESC>
-
 autocmd BufReadPost *
   \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
   \ |   exe "normal! g`\""
@@ -41,10 +38,10 @@ autocmd BufReadPost *
 command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
   \ | wincmd p | diffthis
 
-autocmd FileType javascript setlocal makeprg=eslint\ --format\ compact
-autocmd BufWritePost *.js silent make! <afile> | silent redraw!
-autocmd QuickFixCmdPost [^l]* cwindow
+" autocmd FileType javascript setlocal makeprg=eslint\ --format\ compact
+" autocmd BufWritePost *.js silent make! <afile> | silent redraw!
+" autocmd QuickFixCmdPost [^l]* cwindow
 
 runtime macros/matchit.vim
 
-colorscheme koehler
+colorscheme elflord

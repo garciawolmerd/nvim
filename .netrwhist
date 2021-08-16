@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/dgarcia/Trabalho/procempa/recadastramento/src/app/components/input-select'
+let g:netrw_dirhist_5='/home/dgarcia/Trabalho/procempa/recad-api'
+let g:netrw_dirhist_4='/home/dgarcia/Trabalho/procempa/recadastramento/src/app/components/input-select'
+let g:netrw_dirhist_3='/home/dgarcia/.oh-my-zsh'
+let g:netrw_dirhist_2='/home/dgarcia/Trabalho/procempa/recadastramento/src/app/components/cadastro/endereco'
+let g:netrw_dirhist_1='/var/lib/transmission-daemon/info'
