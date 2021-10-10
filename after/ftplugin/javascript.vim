@@ -5,7 +5,7 @@ set expandtab
 set autoindent
 set smartindent
 setlocal path=.,**
-setlocal wildignore=*/node_modules/*
+setlocal wildignore+=*/node_modules/*
 set include='from\|require'
 " compiler javascript
 " nnoremap <buffer> <space> :silent make <bar> redraw!<CR>

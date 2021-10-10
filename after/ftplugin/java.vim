@@ -5,3 +5,4 @@ set expandtab
 set autoindent
 set smartindent
 setlocal path=.,**
+set wildignore+=*.class,*/target/*

@@ -1,16 +1,19 @@
-" set runtimepath^=~/.vim runtimepath+=~/.vim/after
-" let &packpath = &runtimepath
-" source ~/.vim/vimrc
 set nocompatible
 filetype plugin indent on
 syntax on
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
+set expandtab
+set autoindent
+set smartindent
 set backspace=indent,eol,start
 set hidden
 nnoremap Y y$
 set hls
 set incsearch
 set path=.,**
-set wildignore=*/node_modules/*
+" set wildignore+=*/node_modules/*,*.class,*/target/*
 set showmatch
 set wildmenu
 set showcmd
@@ -28,7 +31,7 @@ set colorcolumn=80
 set termguicolors
 
 let $RTP=split(&runtimepath, ',')[0]
-let $RC='$HOME/.vim/vimrc'
+let $RC='$HOME/.config/nvim/init.vim'
 
 autocmd BufReadPost *
   \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
